@@ -7,24 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8624DA8235B01A9006DE69D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8624DA7235B01A9006DE69D /* AppDelegate.m */; };
-		C8624DAB235B01A9006DE69D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8624DAA235B01A9006DE69D /* ViewController.m */; };
+		C8624DA8235B01A9006DE69D /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8624DA7235B01A9006DE69D /* AppDelegate.mm */; };
+		C8624DAB235B01A9006DE69D /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8624DAA235B01A9006DE69D /* ViewController.mm */; };
 		C8624DAD235B01AA006DE69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8624DAC235B01AA006DE69D /* Assets.xcassets */; };
 		C8624DB0235B01AA006DE69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8624DAE235B01AA006DE69D /* Main.storyboard */; };
 		C8624DB3235B01AA006DE69D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8624DB2235B01AA006DE69D /* main.m */; };
+		C8624DBB235B0DAF006DE69D /* MetalRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C8624DBA235B0DAF006DE69D /* MetalRenderer.m */; };
+		C8624DC2235B1423006DE69D /* Greeting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8624DC0235B1423006DE69D /* Greeting.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8624E44235B693A006DE69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8624E36235B693A006DE69D /* libigl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F1D5C1816D2D40B8B7A70177;
+			remoteInfo = 101_FileIO_bin;
+		};
+		C8624E46235B693A006DE69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8624E36235B693A006DE69D /* libigl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 404490CCC7954070A43A438E;
+			remoteInfo = igl;
+		};
+		C8624E48235B693A006DE69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8624E36235B693A006DE69D /* libigl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8B0A0C247F491C8CBD7DB8;
+			remoteInfo = libigl_tests;
+		};
+		C8624E4A235B693F006DE69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8624E36235B693A006DE69D /* libigl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 780D8A300EF243EDBDC14D73;
+			remoteInfo = igl;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C8624DA3235B01A9006DE69D /* LearnRender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8624DA6235B01A9006DE69D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C8624DA7235B01A9006DE69D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C8624DA7235B01A9006DE69D /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		C8624DA9235B01A9006DE69D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C8624DAA235B01A9006DE69D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C8624DAA235B01A9006DE69D /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		C8624DAC235B01AA006DE69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8624DAF235B01AA006DE69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8624DB1235B01AA006DE69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8624DB2235B01AA006DE69D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C8624DB4235B01AA006DE69D /* LearnRender.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearnRender.entitlements; sourceTree = "<group>"; };
+		C8624DBA235B0DAF006DE69D /* MetalRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalRenderer.m; sourceTree = "<group>"; };
+		C8624DBC235B0DBA006DE69D /* MetalRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalRenderer.h; sourceTree = "<group>"; };
+		C8624DC0235B1423006DE69D /* Greeting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Greeting.cpp; sourceTree = "<group>"; };
+		C8624DC1235B1423006DE69D /* Greeting.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Greeting.hpp; sourceTree = "<group>"; };
+		C8624E36235B693A006DE69D /* libigl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libigl.xcodeproj; path = library/libigl/build/libigl.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +79,11 @@
 		C8624D9A235B01A9006DE69D = {
 			isa = PBXGroup;
 			children = (
-				C8624DA5235B01A9006DE69D /* LearnRender */,
+				C8624E36235B693A006DE69D /* libigl.xcodeproj */,
+				C8624DB1235B01AA006DE69D /* Info.plist */,
+				C8624DB4235B01AA006DE69D /* LearnRender.entitlements */,
+				C8624DBF235B0F55006DE69D /* Common */,
+				C8624DA5235B01A9006DE69D /* Interface */,
 				C8624DA4235B01A9006DE69D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,20 +96,39 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C8624DA5235B01A9006DE69D /* LearnRender */ = {
+		C8624DA5235B01A9006DE69D /* Interface */ = {
 			isa = PBXGroup;
 			children = (
 				C8624DA6235B01A9006DE69D /* AppDelegate.h */,
-				C8624DA7235B01A9006DE69D /* AppDelegate.m */,
+				C8624DA7235B01A9006DE69D /* AppDelegate.mm */,
 				C8624DA9235B01A9006DE69D /* ViewController.h */,
-				C8624DAA235B01A9006DE69D /* ViewController.m */,
+				C8624DAA235B01A9006DE69D /* ViewController.mm */,
 				C8624DAC235B01AA006DE69D /* Assets.xcassets */,
 				C8624DAE235B01AA006DE69D /* Main.storyboard */,
-				C8624DB1235B01AA006DE69D /* Info.plist */,
 				C8624DB2235B01AA006DE69D /* main.m */,
-				C8624DB4235B01AA006DE69D /* LearnRender.entitlements */,
+				C8624DBA235B0DAF006DE69D /* MetalRenderer.m */,
+				C8624DBC235B0DBA006DE69D /* MetalRenderer.h */,
 			);
-			path = LearnRender;
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		C8624DBF235B0F55006DE69D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C8624DC0235B1423006DE69D /* Greeting.cpp */,
+				C8624DC1235B1423006DE69D /* Greeting.hpp */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C8624E37235B693A006DE69D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8624E45235B693A006DE69D /* 101_FileIO_bin */,
+				C8624E47235B693A006DE69D /* libigl.a */,
+				C8624E49235B693A006DE69D /* libigl_tests */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +145,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C8624E4B235B693F006DE69D /* PBXTargetDependency */,
 			);
 			name = LearnRender;
 			productName = LearnRender;
@@ -115,12 +177,42 @@
 			mainGroup = C8624D9A235B01A9006DE69D;
 			productRefGroup = C8624DA4235B01A9006DE69D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C8624E37235B693A006DE69D /* Products */;
+					ProjectRef = C8624E36235B693A006DE69D /* libigl.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C8624DA2235B01A9006DE69D /* LearnRender */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C8624E45235B693A006DE69D /* 101_FileIO_bin */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = 101_FileIO_bin;
+			remoteRef = C8624E44235B693A006DE69D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C8624E47235B693A006DE69D /* libigl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libigl.a;
+			remoteRef = C8624E46235B693A006DE69D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C8624E49235B693A006DE69D /* libigl_tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = libigl_tests;
+			remoteRef = C8624E48235B693A006DE69D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C8624DA1235B01A9006DE69D /* Resources */ = {
@@ -139,13 +231,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8624DAB235B01A9006DE69D /* ViewController.m in Sources */,
+				C8624DC2235B1423006DE69D /* Greeting.cpp in Sources */,
+				C8624DBB235B0DAF006DE69D /* MetalRenderer.m in Sources */,
+				C8624DAB235B01A9006DE69D /* ViewController.mm in Sources */,
 				C8624DB3235B01AA006DE69D /* main.m in Sources */,
-				C8624DA8235B01A9006DE69D /* AppDelegate.m in Sources */,
+				C8624DA8235B01A9006DE69D /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8624E4B235B693F006DE69D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = igl;
+			targetProxy = C8624E4A235B693F006DE69D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C8624DAE235B01AA006DE69D /* Main.storyboard */ = {
@@ -163,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -197,6 +300,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -221,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -254,6 +359,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -272,15 +378,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LearnRender/LearnRender.entitlements;
+				CODE_SIGN_ENTITLEMENTS = LearnRender.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7JX3WT9B5Z;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = LearnRender/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"-Ilibrary/libigl/external/eigen",
+					"-Ilibrary/libigl/include",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = EPFL.LearnRender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,15 +401,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LearnRender/LearnRender.entitlements;
+				CODE_SIGN_ENTITLEMENTS = LearnRender.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7JX3WT9B5Z;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = LearnRender/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"-Ilibrary/libigl/external/eigen",
+					"-Ilibrary/libigl/include",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = EPFL.LearnRender;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppDelegate.h
 //  LearnRender
 //
 //  Created by ziqwang on 19.10.19.
@@ -8,8 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
 
 @end
-
