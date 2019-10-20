@@ -1,6 +1,3 @@
-[submodule "3rd-party/HelloCpp"]
-	path = 3rd-party/HelloCpp
-	url = https://github.com/sitepoint-editors/HelloCpp.git
 [submodule "3rd-party/libigl"]
 	path = 3rd-party/libigl
 	url = https://github.com/libigl/libigl.git
