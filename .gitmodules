@@ -1,6 +1,3 @@
-[submodule "3rd-party/--recursive"]
-	path = 3rd-party/--recursive
-	url = https://github.com/sitepoint-editors/HelloCpp.git
 [submodule "3rd-party/HelloCpp"]
 	path = 3rd-party/HelloCpp
 	url = https://github.com/sitepoint-editors/HelloCpp.git
