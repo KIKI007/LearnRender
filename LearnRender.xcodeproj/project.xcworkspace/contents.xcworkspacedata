@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../library/libigl/build/libigl.xcodeproj">
+      location = "group:../library/xcode/library.xcodeproj">
    </FileRef>
    <FileRef
       location = "self:">

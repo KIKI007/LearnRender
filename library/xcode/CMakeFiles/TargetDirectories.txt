@@ -1,0 +1,6 @@
+/Users/ziqwang/Documents/GitHub/LearnRender/library/xcode/CMakeFiles/library.dir
+/Users/ziqwang/Documents/GitHub/LearnRender/library/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/ziqwang/Documents/GitHub/LearnRender/library/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/ziqwang/Documents/GitHub/LearnRender/library/xcode/libigl/CMakeFiles/igl.dir
+/Users/ziqwang/Documents/GitHub/LearnRender/library/xcode/libigl/CMakeFiles/ALL_BUILD.dir
+/Users/ziqwang/Documents/GitHub/LearnRender/library/xcode/libigl/CMakeFiles/ZERO_CHECK.dir

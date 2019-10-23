@@ -7,47 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82E1C30235F92ED00DEB407 /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E1C2F235F92EC00DEB407 /* AAPLMathUtilities.m */; };
 		C8624DA8235B01A9006DE69D /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8624DA7235B01A9006DE69D /* AppDelegate.mm */; };
 		C8624DAB235B01A9006DE69D /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8624DAA235B01A9006DE69D /* ViewController.mm */; };
 		C8624DAD235B01AA006DE69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8624DAC235B01AA006DE69D /* Assets.xcassets */; };
 		C8624DB0235B01AA006DE69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8624DAE235B01AA006DE69D /* Main.storyboard */; };
 		C8624DB3235B01AA006DE69D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8624DB2235B01AA006DE69D /* main.m */; };
 		C8624DBB235B0DAF006DE69D /* MetalRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C8624DBA235B0DAF006DE69D /* MetalRenderer.m */; };
-		C8624DC2235B1423006DE69D /* Greeting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8624DC0235B1423006DE69D /* Greeting.cpp */; };
+		C8CC6652235E533F00D7CD8A /* libigl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CC6649235E4BE000D7CD8A /* libigl.a */; };
+		C8CC6653235E533F00D7CD8A /* liblibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CC6650235E50B100D7CD8A /* liblibrary.a */; };
+		C8CC6655235E572400D7CD8A /* EasyShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = C8CC6654235E572400D7CD8A /* EasyShader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C8624E44235B693A006DE69D /* PBXContainerItemProxy */ = {
+		C8CC6648235E4BE000D7CD8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C8624E36235B693A006DE69D /* libigl.xcodeproj */;
+			containerPortal = C8CC6642235E4BE000D7CD8A /* library.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = F1D5C1816D2D40B8B7A70177;
-			remoteInfo = 101_FileIO_bin;
-		};
-		C8624E46235B693A006DE69D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C8624E36235B693A006DE69D /* libigl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 404490CCC7954070A43A438E;
+			remoteGlobalIDString = 70210FA562174352889F7F7C;
 			remoteInfo = igl;
 		};
-		C8624E48235B693A006DE69D /* PBXContainerItemProxy */ = {
+		C8CC664F235E50B100D7CD8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C8624E36235B693A006DE69D /* libigl.xcodeproj */;
+			containerPortal = C8CC6642235E4BE000D7CD8A /* library.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 1F8B0A0C247F491C8CBD7DB8;
-			remoteInfo = libigl_tests;
-		};
-		C8624E4A235B693F006DE69D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C8624E36235B693A006DE69D /* libigl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 780D8A300EF243EDBDC14D73;
-			remoteInfo = igl;
+			remoteGlobalIDString = C0DF0FE673A94DD7ACB640CD;
+			remoteInfo = library;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C82E1C2E235F92EC00DEB407 /* AAPLMathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLMathUtilities.h; sourceTree = "<group>"; };
+		C82E1C2F235F92EC00DEB407 /* AAPLMathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLMathUtilities.m; sourceTree = "<group>"; };
 		C8624DA3235B01A9006DE69D /* LearnRender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8624DA6235B01A9006DE69D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C8624DA7235B01A9006DE69D /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -60,9 +51,8 @@
 		C8624DB4235B01AA006DE69D /* LearnRender.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearnRender.entitlements; sourceTree = "<group>"; };
 		C8624DBA235B0DAF006DE69D /* MetalRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalRenderer.m; sourceTree = "<group>"; };
 		C8624DBC235B0DBA006DE69D /* MetalRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalRenderer.h; sourceTree = "<group>"; };
-		C8624DC0235B1423006DE69D /* Greeting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Greeting.cpp; sourceTree = "<group>"; };
-		C8624DC1235B1423006DE69D /* Greeting.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Greeting.hpp; sourceTree = "<group>"; };
-		C8624E36235B693A006DE69D /* libigl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libigl.xcodeproj; path = library/libigl/build/libigl.xcodeproj; sourceTree = "<group>"; };
+		C8CC6642235E4BE000D7CD8A /* library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = library.xcodeproj; path = library/xcode/library.xcodeproj; sourceTree = "<group>"; };
+		C8CC6654235E572400D7CD8A /* EasyShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EasyShader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CC6652235E533F00D7CD8A /* libigl.a in Frameworks */,
+				C8CC6653235E533F00D7CD8A /* liblibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +71,13 @@
 		C8624D9A235B01A9006DE69D = {
 			isa = PBXGroup;
 			children = (
-				C8624E36235B693A006DE69D /* libigl.xcodeproj */,
+				C8CC6642235E4BE000D7CD8A /* library.xcodeproj */,
 				C8624DB1235B01AA006DE69D /* Info.plist */,
 				C8624DB4235B01AA006DE69D /* LearnRender.entitlements */,
 				C8624DBF235B0F55006DE69D /* Common */,
 				C8624DA5235B01A9006DE69D /* Interface */,
 				C8624DA4235B01A9006DE69D /* Products */,
+				C8CC6651235E533F00D7CD8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +101,7 @@
 				C8624DB2235B01AA006DE69D /* main.m */,
 				C8624DBA235B0DAF006DE69D /* MetalRenderer.m */,
 				C8624DBC235B0DBA006DE69D /* MetalRenderer.h */,
+				C8CC6654235E572400D7CD8A /* EasyShader.metal */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -115,20 +109,26 @@
 		C8624DBF235B0F55006DE69D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				C8624DC0235B1423006DE69D /* Greeting.cpp */,
-				C8624DC1235B1423006DE69D /* Greeting.hpp */,
+				C82E1C2E235F92EC00DEB407 /* AAPLMathUtilities.h */,
+				C82E1C2F235F92EC00DEB407 /* AAPLMathUtilities.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		C8624E37235B693A006DE69D /* Products */ = {
+		C8CC6643235E4BE000D7CD8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C8624E45235B693A006DE69D /* 101_FileIO_bin */,
-				C8624E47235B693A006DE69D /* libigl.a */,
-				C8624E49235B693A006DE69D /* libigl_tests */,
+				C8CC6649235E4BE000D7CD8A /* libigl.a */,
+				C8CC6650235E50B100D7CD8A /* liblibrary.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C8CC6651235E533F00D7CD8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +145,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C8624E4B235B693F006DE69D /* PBXTargetDependency */,
 			);
 			name = LearnRender;
 			productName = LearnRender;
@@ -179,8 +178,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C8624E37235B693A006DE69D /* Products */;
-					ProjectRef = C8624E36235B693A006DE69D /* libigl.xcodeproj */;
+					ProductGroup = C8CC6643235E4BE000D7CD8A /* Products */;
+					ProjectRef = C8CC6642235E4BE000D7CD8A /* library.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -191,25 +190,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C8624E45235B693A006DE69D /* 101_FileIO_bin */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = 101_FileIO_bin;
-			remoteRef = C8624E44235B693A006DE69D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C8624E47235B693A006DE69D /* libigl.a */ = {
+		C8CC6649235E4BE000D7CD8A /* libigl.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libigl.a;
-			remoteRef = C8624E46235B693A006DE69D /* PBXContainerItemProxy */;
+			remoteRef = C8CC6648235E4BE000D7CD8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C8624E49235B693A006DE69D /* libigl_tests */ = {
+		C8CC6650235E50B100D7CD8A /* liblibrary.a */ = {
 			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = libigl_tests;
-			remoteRef = C8624E48235B693A006DE69D /* PBXContainerItemProxy */;
+			fileType = archive.ar;
+			path = liblibrary.a;
+			remoteRef = C8CC664F235E50B100D7CD8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -231,23 +223,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8624DC2235B1423006DE69D /* Greeting.cpp in Sources */,
 				C8624DBB235B0DAF006DE69D /* MetalRenderer.m in Sources */,
+				C8CC6655235E572400D7CD8A /* EasyShader.metal in Sources */,
 				C8624DAB235B01A9006DE69D /* ViewController.mm in Sources */,
 				C8624DB3235B01AA006DE69D /* main.m in Sources */,
+				C82E1C30235F92ED00DEB407 /* AAPLMathUtilities.m in Sources */,
 				C8624DA8235B01A9006DE69D /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C8624E4B235B693F006DE69D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = igl;
-			targetProxy = C8624E4A235B693F006DE69D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C8624DAE235B01AA006DE69D /* Main.storyboard */ = {
@@ -388,9 +373,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = (
 					"-Ilibrary/libigl/external/eigen",
 					"-Ilibrary/libigl/include",
+					"-Ilibrary/",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = EPFL.LearnRender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,9 +398,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = (
 					"-Ilibrary/libigl/external/eigen",
 					"-Ilibrary/libigl/include",
+					"-Ilibrary/",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = EPFL.LearnRender;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import "MetalRenderer.h"
-#import "Greeting.hpp"
+#import "AppDelegate.h"
+
+
 @interface ViewController ()
 {
     
@@ -18,7 +20,6 @@
 @implementation ViewController
 {
     MTKView *_view;
-
     MetalRenderer *_renderer;
 }
 
@@ -29,7 +30,7 @@
     // Set the view to use the default device.
     _view = (MTKView *)self.view;
     _view.device = MTLCreateSystemDefaultDevice();
-    _view.clearColor = MTLClearColorMake(0.0, 0.5, 1.0, 1.0);
+    _view.clearColor = MTLClearColorMake(1.0, 1.0, 1.0, 1.0);
     
     if(!_view.device)
     {
@@ -50,4 +51,48 @@
 
     _view.delegate = _renderer;
 }
+
+- (IBAction)Button:(id)sender
+{
+    AppDelegate *appDelegate = (AppDelegate*)[[NSApplication sharedApplication] delegate];
+    
+    vector<shared_ptr<MeshBase>> pMesh = appDelegate.meshes;
+    
+    _renderer.meshes_position = [NSMutableArray new];
+    _renderer.meshes_index = [NSMutableArray new];
+    
+    for(size_t i = 0; i < pMesh.size(); i++)
+    {
+        size_t offset = [_renderer.meshes_position count] / 3;
+        
+        for(size_t j = 0; j < pMesh[i]->V_.rows(); j++)
+        {
+            float px = (float)pMesh[i]->V_(j, 0);
+            float py = (float)pMesh[i]->V_(j, 1);
+            float pz = (float)pMesh[i]->V_(j, 2);
+            
+            [_renderer.meshes_position addObject:[NSNumber numberWithFloat: px]];
+            [_renderer.meshes_position addObject:[NSNumber numberWithFloat: py]];
+            [_renderer.meshes_position addObject:[NSNumber numberWithFloat: pz]];
+        }
+        
+        for(size_t j = 0; j < pMesh[i]->F_.rows(); j++)
+        {
+            size_t ix = (size_t)pMesh[i]->F_(j, 0);
+            size_t iy = (size_t)pMesh[i]->F_(j, 1);
+            size_t iz = (size_t)pMesh[i]->F_(j, 2);
+            
+            [_renderer.meshes_index addObject:[NSNumber numberWithUnsignedInteger: ix + offset]];
+            [_renderer.meshes_index addObject:[NSNumber numberWithUnsignedInteger: iy + offset]];
+            [_renderer.meshes_index addObject:[NSNumber numberWithUnsignedInteger: iz + offset]];
+        }
+    }
+    
+    NSLog(@"%u", [_renderer.meshes_position count]);
+    
+    [_renderer buildObjects];
+}
+
+
+
 @end

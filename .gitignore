@@ -1,0 +1,3 @@
+*.a
+library/cmake-build-debug/*
+library/cmake-build-release/*
